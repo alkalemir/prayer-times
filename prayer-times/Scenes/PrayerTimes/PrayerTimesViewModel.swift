@@ -55,7 +55,6 @@ final class PrayerTimesViewModel: NSObject {
     public func fetchTimes() {
         firstTimeCalled = false
         locationManager.startUpdatingLocation()
-        print("called")
     }
 }
 

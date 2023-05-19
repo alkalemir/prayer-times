@@ -24,7 +24,7 @@ final class PrayerTimesController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .init(named: "background")
         prayerTimesView?.delegate = self
         viewModel.delegate = self
     }
@@ -65,10 +65,11 @@ extension PrayerTimesController: PrayerTimesDelegate {
     }
         
     func showUserHowToChangeLocationAuth() {
+        tabBarController?.selectedIndex = 0
         removeChild(vc: vc1)
         addChild(vc: vc2)
         vc2.actionButton.addTarget(self, action: #selector(handleOpenSettingsButton), for: .touchUpInside)
-        self.tabBarController?.tabBar.isHidden = true
+        tabBarController?.tabBar.isHidden = true
     }
 }
 

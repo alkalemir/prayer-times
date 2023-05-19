@@ -19,7 +19,7 @@ final class TabBarController: UITabBarController {
         vc1.tabBarItem.title = "Ezan Vakitleri"
         vc1.tabBarItem.image = UIImage(named: "Pray Times")
         
-        let vc2 = UIViewController()
+        let vc2 = QiblaFinderController()
         vc2.tabBarItem.title = "Kıble Bulucu"
         vc2.tabBarItem.image = UIImage(named: "Compass")
         

@@ -44,6 +44,8 @@
 		2D8F398A2A180D8C0000B90E /* SingleTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39892A180D8C0000B90E /* SingleTimeView.swift */; };
 		2D8F398C2A180DA20000B90E /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F398B2A180DA20000B90E /* UIStackView+.swift */; };
 		2D8F398E2A180ED90000B90E /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F398D2A180ED90000B90E /* UIApplication+.swift */; };
+		2D8F39912A1826450000B90E /* QiblaFinderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39902A1826450000B90E /* QiblaFinderController.swift */; };
+		2D8F39942A18267D0000B90E /* CompassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39932A18267D0000B90E /* CompassManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,8 @@
 		2D8F39892A180D8C0000B90E /* SingleTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleTimeView.swift; sourceTree = "<group>"; };
 		2D8F398B2A180DA20000B90E /* UIStackView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		2D8F398D2A180ED90000B90E /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		2D8F39902A1826450000B90E /* QiblaFinderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiblaFinderController.swift; sourceTree = "<group>"; };
+		2D8F39932A18267D0000B90E /* CompassManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,7 @@
 		2D8F39112A17B6650000B90E /* prayer-times */ = {
 			isa = PBXGroup;
 			children = (
+				2D8F39922A18267D0000B90E /* Managers */,
 				2D8F39752A17CB590000B90E /* General */,
 				2D8F395A2A17C3F80000B90E /* CeraFont */,
 				2D8F39572A17C3D70000B90E /* Extensions */,
@@ -229,6 +234,7 @@
 			children = (
 				2D8F39542A17C3990000B90E /* TabBar */,
 				2D8F396A2A17C49B0000B90E /* PrayerTimes */,
+				2D8F398F2A1826050000B90E /* QiblaFinder */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -296,6 +302,22 @@
 				2D8F39762A17CB600000B90E /* AlertController.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		2D8F398F2A1826050000B90E /* QiblaFinder */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F39902A1826450000B90E /* QiblaFinderController.swift */,
+			);
+			path = QiblaFinder;
+			sourceTree = "<group>";
+		};
+		2D8F39922A18267D0000B90E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F39932A18267D0000B90E /* CompassManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,6 +489,8 @@
 				2D8F39702A17CA610000B90E /* UIViewController+.swift in Sources */,
 				2D8F39772A17CB600000B90E /* AlertController.swift in Sources */,
 				2D8F396C2A17C4A90000B90E /* PrayerTimesViewModel.swift in Sources */,
+				2D8F39942A18267D0000B90E /* CompassManager.swift in Sources */,
+				2D8F39912A1826450000B90E /* QiblaFinderController.swift in Sources */,
 				2D8F398A2A180D8C0000B90E /* SingleTimeView.swift in Sources */,
 				2D8F39792A17CB950000B90E /* UILabel+.swift in Sources */,
 				2D8F398E2A180ED90000B90E /* UIApplication+.swift in Sources */,
