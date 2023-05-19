@@ -11,5 +11,6 @@ extension UIColor {
     static let selectedTint = UIColor(named: "selectedTint")!
     static let unselectedTint = UIColor(named: "unselectedTint")!
     static let secondaryText = UIColor(named: "secondaryText")!
+    static let separatorColor = UIColor(named: "separatorColor")!
 }
 

@@ -11,7 +11,8 @@ import SnapKit
 final class AlertController: UIViewController {
     private let containerView = UIView()
     private let titleLabel = UILabel(textColor: .selectedTint, font: .ceraBold(size: 18))
-    private let bodyLabel = UILabel(textColor: .unselectedTint, font: .ceraLight(size: 16))
+    
+    private let bodyLabel = UILabel(textColor: #colorLiteral(red: 0.1381634322, green: 0.524965864, blue: 1, alpha: 1), font: .ceraMedium(size: 17))
     private let logoImageView = UIImageView(image: UIImage(named: "mosque")!)
     public let actionButton = UIButton(type: .system)
     
@@ -29,6 +30,7 @@ final class AlertController: UIViewController {
         bodyLabel.text = message
         titleLabel.textAlignment = .center
         bodyLabel.textAlignment = .center
+        actionButton.titleLabel?.font = .ceraMedium(size: 18)
         actionButton.setTitle(buttonTitle, for: .normal)
         actionButton.backgroundColor = .selectedTint
         actionButton.setTitleColor(.unselectedTint, for: .normal)
@@ -51,7 +53,7 @@ final class AlertController: UIViewController {
         containerView.layer.cornerRadius = 16
         containerView.layer.borderColor = UIColor.white.cgColor
         containerView.layer.borderWidth = 1
-        containerView.backgroundColor = .systemBackground
+        containerView.backgroundColor = .white
         
         titleLabel.text = alertTitle
         bodyLabel.text = message

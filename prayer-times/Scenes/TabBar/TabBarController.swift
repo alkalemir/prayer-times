@@ -41,7 +41,7 @@ final class TabBarController: UITabBarController {
         
         tabBar.tintColor = .selectedTint
         tabBar.unselectedItemTintColor = .unselectedTint
-        tabBar.backgroundColor = .systemBackground
+        tabBar.backgroundColor = .white
         setUnselectedItems(for: tabBar)
         
         tabBar.layer.shadowColor = UIColor.lightGray.cgColor

@@ -9,7 +9,7 @@ import UIKit
 import NetworkManager
 
 final class PrayerTimesController: UIViewController {
-    private let viewModel = PrayerTimesViewModel()
+    let viewModel = PrayerTimesViewModel()
     let vc1 = AlertController(alertTitle: "Konum bilgine ihtiyacımız var!", message: "Konum bilgini paylaşmak için hazır mısın? Yalnızca uygulamayı kullanırken konumunuzu kullanıyor olacağız.", buttonTitle: "Konum İzni İste")
     let vc2 = AlertController(alertTitle: "Konum bilgine ihtiyacımız var!", message: "Görünüşe göre konum bilgisine izin vermemişsiniz. Konuma izin vermek için Ayarlar -> Gizlilik & Güvenlik ve daha sonra uygulamamızı seçerek izin verebilirsin.", buttonTitle: "Konum İzni İste")
 
@@ -54,7 +54,7 @@ extension PrayerTimesController: PrayerTimesDelegate {
     }
     
     func showPrayerTimes(prayerTimes: PrayerTimesModel) {
-        prayerTimesView?.showPrayerTimes(presentation: prayerTimes.toPresentation(date: Date()))
+        prayerTimesView?.showPrayerTimes(presentation: prayerTimes.toPresentation(date: Date().addingTimeInterval(3600 * 4 + 40 * 60)))
     }
     
     func requestLocation() {

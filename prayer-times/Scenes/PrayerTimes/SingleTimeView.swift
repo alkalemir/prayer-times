@@ -27,9 +27,7 @@ final class SingleTimeView: UIView {
     }
     
     func makeCurrentTime() {
-        layer.borderColor = UIColor.tintColor.cgColor
-        layer.borderWidth = 1
-        layer.cornerRadius = 8
+        backgroundColor = .separatorColor
         
         addSubview(currentTimeLabel)
         currentTimeLabel.text = "•  Şu Anki Vakit"
@@ -39,6 +37,7 @@ final class SingleTimeView: UIView {
     }
     
     func clearCurrentTime() {
+        backgroundColor = .white
         currentTimeLabel.removeFromSuperview()
         layer.borderWidth = 0
     }

@@ -38,31 +38,31 @@ extension PrayerTimesModel {
         let remainingTime: Int
         
         if currentInterval < intervals[0] {
-            nextTime = "Fajr"
+            nextTime = "İmsak"
             currentTime = 5
             remainingTime = intervals[0] - currentInterval
         } else if currentInterval < intervals[1] {
-            nextTime = "Sunrise"
+            nextTime = "Güneş"
             currentTime = 0
             remainingTime = intervals[1] - currentInterval
         } else if currentInterval < intervals[2] {
-            nextTime = "Dhuhr"
+            nextTime = "Öğle"
             currentTime = 1
             remainingTime = intervals[2] - currentInterval
         } else if currentInterval < intervals[3] {
-            nextTime = "Asr"
+            nextTime = "İkindi"
             currentTime = 2
             remainingTime = intervals[3] - currentInterval
         } else if currentInterval < intervals[4] {
-            nextTime = "Sunset"
+            nextTime = "Akşam"
             currentTime = 3
             remainingTime = intervals[4] - currentInterval
         } else if currentInterval < intervals[5] {
-            nextTime = "Isha"
+            nextTime = "Yatsı"
             currentTime = 4
             remainingTime = intervals[5] - currentInterval
         } else {
-            nextTime = "Fajr"
+            nextTime = "İmsak"
             currentTime = 5
             remainingTime = intervals[0] + (3600 * 24 - intervals[5])
         }
