@@ -29,6 +29,12 @@
 		2D8F39662A17C4060000B90E /* Cera Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F39602A17C4060000B90E /* Cera Pro Medium.otf */; };
 		2D8F39672A17C4060000B90E /* Cera Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F39612A17C4060000B90E /* Cera Pro Black.otf */; };
 		2D8F39692A17C41E0000B90E /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39682A17C41E0000B90E /* UIFont+.swift */; };
+		2D8F396C2A17C4A90000B90E /* PrayerTimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F396B2A17C4A90000B90E /* PrayerTimesViewModel.swift */; };
+		2D8F39702A17CA610000B90E /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F396F2A17CA610000B90E /* UIViewController+.swift */; };
+		2D8F39732A17CB4B0000B90E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2D8F39722A17CB4B0000B90E /* SnapKit */; };
+		2D8F39772A17CB600000B90E /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39762A17CB600000B90E /* AlertController.swift */; };
+		2D8F39792A17CB950000B90E /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39782A17CB950000B90E /* UILabel+.swift */; };
+		2D8F397B2A17CBA00000B90E /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F397A2A17CBA00000B90E /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,11 @@
 		2D8F39602A17C4060000B90E /* Cera Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Medium.otf"; sourceTree = "<group>"; };
 		2D8F39612A17C4060000B90E /* Cera Pro Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Black.otf"; sourceTree = "<group>"; };
 		2D8F39682A17C41E0000B90E /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		2D8F396B2A17C4A90000B90E /* PrayerTimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesViewModel.swift; sourceTree = "<group>"; };
+		2D8F396F2A17CA610000B90E /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		2D8F39762A17CB600000B90E /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		2D8F39782A17CB950000B90E /* UILabel+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		2D8F397A2A17CBA00000B90E /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D8F39402A17B73A0000B90E /* NetworkManager.framework in Frameworks */,
+				2D8F39732A17CB4B0000B90E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +157,7 @@
 		2D8F39112A17B6650000B90E /* prayer-times */ = {
 			isa = PBXGroup;
 			children = (
+				2D8F39752A17CB590000B90E /* General */,
 				2D8F395A2A17C3F80000B90E /* CeraFont */,
 				2D8F39572A17C3D70000B90E /* Extensions */,
 				2D8F39522A17C14A0000B90E /* Resources */,
@@ -196,7 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				2D8F39542A17C3990000B90E /* TabBar */,
-				2D8F39162A17B6650000B90E /* PrayerTimesController.swift */,
+				2D8F396A2A17C49B0000B90E /* PrayerTimes */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -212,8 +225,11 @@
 		2D8F39572A17C3D70000B90E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2D8F397A2A17CBA00000B90E /* UIView+.swift */,
+				2D8F39782A17CB950000B90E /* UILabel+.swift */,
 				2D8F39582A17C3EC0000B90E /* UIColor+.swift */,
 				2D8F39682A17C41E0000B90E /* UIFont+.swift */,
+				2D8F396F2A17CA610000B90E /* UIViewController+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,6 +253,23 @@
 				2D8F39612A17C4060000B90E /* Cera Pro Black.otf */,
 			);
 			path = "cera pro sv";
+			sourceTree = "<group>";
+		};
+		2D8F396A2A17C49B0000B90E /* PrayerTimes */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F39162A17B6650000B90E /* PrayerTimesController.swift */,
+				2D8F396B2A17C4A90000B90E /* PrayerTimesViewModel.swift */,
+			);
+			path = PrayerTimes;
+			sourceTree = "<group>";
+		};
+		2D8F39752A17CB590000B90E /* General */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F39762A17CB600000B90E /* AlertController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +300,9 @@
 				2D8F393F2A17B73A0000B90E /* PBXTargetDependency */,
 			);
 			name = "prayer-times";
+			packageProductDependencies = (
+				2D8F39722A17CB4B0000B90E /* SnapKit */,
+			);
 			productName = "prayer-times";
 			productReference = 2D8F390F2A17B6650000B90E /* prayer-times.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +375,9 @@
 				Base,
 			);
 			mainGroup = 2D8F39062A17B6650000B90E;
+			packageReferences = (
+				2D8F39712A17CB4B0000B90E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 2D8F39102A17B6650000B90E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -387,10 +426,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8F397B2A17CBA00000B90E /* UIView+.swift in Sources */,
 				2D8F39172A17B6650000B90E /* PrayerTimesController.swift in Sources */,
 				2D8F39562A17C3A60000B90E /* TabBarController.swift in Sources */,
 				2D8F39132A17B6650000B90E /* AppDelegate.swift in Sources */,
 				2D8F39152A17B6650000B90E /* SceneDelegate.swift in Sources */,
+				2D8F39702A17CA610000B90E /* UIViewController+.swift in Sources */,
+				2D8F39772A17CB600000B90E /* AlertController.swift in Sources */,
+				2D8F396C2A17C4A90000B90E /* PrayerTimesViewModel.swift in Sources */,
+				2D8F39792A17CB950000B90E /* UILabel+.swift in Sources */,
 				2D8F39692A17C41E0000B90E /* UIFont+.swift in Sources */,
 				2D8F39592A17C3EC0000B90E /* UIColor+.swift in Sources */,
 			);
@@ -759,6 +803,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D8F39712A17CB4B0000B90E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D8F39722A17CB4B0000B90E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D8F39712A17CB4B0000B90E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2D8F39072A17B6650000B90E /* Project object */;
 }
