@@ -8,15 +8,14 @@
 import Foundation
 
 public struct PrayerTimesModel: Decodable {
-    let country: String
-    let countryCode: String
-    let city: String
-    let region: String
-    
-    let fajr: String
-    let sunrise: String
-    let dhuhr: String
-    let asr: String
-    let sunset: String
-    let isha: String
+    public let country: String
+    public let countryCode: String
+    public let city: String
+    public let region: String
+    public let fajr: String
+    public let sunrise: String
+    public let dhuhr: String
+    public let asr: String
+    public let sunset: String
+    public let isha: String
 }

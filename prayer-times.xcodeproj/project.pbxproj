@@ -35,6 +35,15 @@
 		2D8F39772A17CB600000B90E /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39762A17CB600000B90E /* AlertController.swift */; };
 		2D8F39792A17CB950000B90E /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39782A17CB950000B90E /* UILabel+.swift */; };
 		2D8F397B2A17CBA00000B90E /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F397A2A17CBA00000B90E /* UIView+.swift */; };
+		2D8F397D2A17D8810000B90E /* PrayerTimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F397C2A17D8810000B90E /* PrayerTimesView.swift */; };
+		2D8F39802A17D9440000B90E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2D8F397F2A17D9440000B90E /* Lottie */; };
+		2D8F39822A17D9560000B90E /* spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F39812A17D9560000B90E /* spinner.json */; };
+		2D8F39842A17D95B0000B90E /* LottieAnimationView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39832A17D95B0000B90E /* LottieAnimationView+.swift */; };
+		2D8F39862A17EF7E0000B90E /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39852A17EF7E0000B90E /* UIImageView+.swift */; };
+		2D8F39882A17F1BD0000B90E /* PrayerTimesPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39872A17F1BC0000B90E /* PrayerTimesPresentation.swift */; };
+		2D8F398A2A180D8C0000B90E /* SingleTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39892A180D8C0000B90E /* SingleTimeView.swift */; };
+		2D8F398C2A180DA20000B90E /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F398B2A180DA20000B90E /* UIStackView+.swift */; };
+		2D8F398E2A180ED90000B90E /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F398D2A180ED90000B90E /* UIApplication+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +113,14 @@
 		2D8F39762A17CB600000B90E /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		2D8F39782A17CB950000B90E /* UILabel+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		2D8F397A2A17CBA00000B90E /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		2D8F397C2A17D8810000B90E /* PrayerTimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesView.swift; sourceTree = "<group>"; };
+		2D8F39812A17D9560000B90E /* spinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinner.json; sourceTree = "<group>"; };
+		2D8F39832A17D95B0000B90E /* LottieAnimationView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LottieAnimationView+.swift"; sourceTree = "<group>"; };
+		2D8F39852A17EF7E0000B90E /* UIImageView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		2D8F39872A17F1BC0000B90E /* PrayerTimesPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesPresentation.swift; sourceTree = "<group>"; };
+		2D8F39892A180D8C0000B90E /* SingleTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleTimeView.swift; sourceTree = "<group>"; };
+		2D8F398B2A180DA20000B90E /* UIStackView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		2D8F398D2A180ED90000B90E /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +130,7 @@
 			files = (
 				2D8F39402A17B73A0000B90E /* NetworkManager.framework in Frameworks */,
 				2D8F39732A17CB4B0000B90E /* SnapKit in Frameworks */,
+				2D8F39802A17D9440000B90E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +216,7 @@
 		2D8F39522A17C14A0000B90E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D8F39812A17D9560000B90E /* spinner.json */,
 				2D8F391B2A17B6660000B90E /* Assets.xcassets */,
 				2D8F391D2A17B6660000B90E /* LaunchScreen.storyboard */,
 				2D8F39202A17B6660000B90E /* Info.plist */,
@@ -225,11 +244,15 @@
 		2D8F39572A17C3D70000B90E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2D8F39832A17D95B0000B90E /* LottieAnimationView+.swift */,
 				2D8F397A2A17CBA00000B90E /* UIView+.swift */,
+				2D8F39852A17EF7E0000B90E /* UIImageView+.swift */,
 				2D8F39782A17CB950000B90E /* UILabel+.swift */,
+				2D8F398B2A180DA20000B90E /* UIStackView+.swift */,
 				2D8F39582A17C3EC0000B90E /* UIColor+.swift */,
 				2D8F39682A17C41E0000B90E /* UIFont+.swift */,
 				2D8F396F2A17CA610000B90E /* UIViewController+.swift */,
+				2D8F398D2A180ED90000B90E /* UIApplication+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -258,8 +281,11 @@
 		2D8F396A2A17C49B0000B90E /* PrayerTimes */ = {
 			isa = PBXGroup;
 			children = (
+				2D8F39892A180D8C0000B90E /* SingleTimeView.swift */,
 				2D8F39162A17B6650000B90E /* PrayerTimesController.swift */,
 				2D8F396B2A17C4A90000B90E /* PrayerTimesViewModel.swift */,
+				2D8F397C2A17D8810000B90E /* PrayerTimesView.swift */,
+				2D8F39872A17F1BC0000B90E /* PrayerTimesPresentation.swift */,
 			);
 			path = PrayerTimes;
 			sourceTree = "<group>";
@@ -302,6 +328,7 @@
 			name = "prayer-times";
 			packageProductDependencies = (
 				2D8F39722A17CB4B0000B90E /* SnapKit */,
+				2D8F397F2A17D9440000B90E /* Lottie */,
 			);
 			productName = "prayer-times";
 			productReference = 2D8F390F2A17B6650000B90E /* prayer-times.app */;
@@ -377,6 +404,7 @@
 			mainGroup = 2D8F39062A17B6650000B90E;
 			packageReferences = (
 				2D8F39712A17CB4B0000B90E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				2D8F397E2A17D9440000B90E /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 2D8F39102A17B6650000B90E /* Products */;
 			projectDirPath = "";
@@ -397,6 +425,7 @@
 				2D8F39662A17C4060000B90E /* Cera Pro Medium.otf in Resources */,
 				2D8F391F2A17B6660000B90E /* LaunchScreen.storyboard in Resources */,
 				2D8F39672A17C4060000B90E /* Cera Pro Black.otf in Resources */,
+				2D8F39822A17D9560000B90E /* spinner.json in Resources */,
 				2D8F39652A17C4060000B90E /* Cera Pro Bold.otf in Resources */,
 				2D8F39642A17C4060000B90E /* Cera Pro Black Italic.otf in Resources */,
 				2D8F39622A17C4060000B90E /* Cera Pro Light.otf in Resources */,
@@ -426,16 +455,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8F397D2A17D8810000B90E /* PrayerTimesView.swift in Sources */,
 				2D8F397B2A17CBA00000B90E /* UIView+.swift in Sources */,
+				2D8F39862A17EF7E0000B90E /* UIImageView+.swift in Sources */,
 				2D8F39172A17B6650000B90E /* PrayerTimesController.swift in Sources */,
+				2D8F39842A17D95B0000B90E /* LottieAnimationView+.swift in Sources */,
 				2D8F39562A17C3A60000B90E /* TabBarController.swift in Sources */,
+				2D8F39882A17F1BD0000B90E /* PrayerTimesPresentation.swift in Sources */,
 				2D8F39132A17B6650000B90E /* AppDelegate.swift in Sources */,
 				2D8F39152A17B6650000B90E /* SceneDelegate.swift in Sources */,
 				2D8F39702A17CA610000B90E /* UIViewController+.swift in Sources */,
 				2D8F39772A17CB600000B90E /* AlertController.swift in Sources */,
 				2D8F396C2A17C4A90000B90E /* PrayerTimesViewModel.swift in Sources */,
+				2D8F398A2A180D8C0000B90E /* SingleTimeView.swift in Sources */,
 				2D8F39792A17CB950000B90E /* UILabel+.swift in Sources */,
+				2D8F398E2A180ED90000B90E /* UIApplication+.swift in Sources */,
 				2D8F39692A17C41E0000B90E /* UIFont+.swift in Sources */,
+				2D8F398C2A180DA20000B90E /* UIStackView+.swift in Sources */,
 				2D8F39592A17C3EC0000B90E /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -813,6 +849,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		2D8F397E2A17D9440000B90E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -820,6 +864,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2D8F39712A17CB4B0000B90E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		2D8F397F2A17D9440000B90E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D8F397E2A17D9440000B90E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

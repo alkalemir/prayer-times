@@ -51,6 +51,11 @@ final class PrayerTimesViewModel: NSObject {
     public func requestLocation() {
         locationManager.requestWhenInUseAuthorization()
     }
+    
+    public func fetchTimes() {
+        firstTimeCalled = false
+        locationManager.startUpdatingLocation()
+    }
 }
 
 extension PrayerTimesViewModel: CLLocationManagerDelegate {
@@ -58,12 +63,15 @@ extension PrayerTimesViewModel: CLLocationManagerDelegate {
         guard !firstTimeCalled else { return }
         firstTimeCalled = true
         guard let lastLocation = locations.last else { return }
-        
-        print(locations.last!.coordinate.latitude, locations.last!.coordinate.longitude)
-        networkManager.fetchTimes(lat: lastLocation.coordinate.latitude, lon: lastLocation.coordinate.longitude) { result in
+        locationManager.stopUpdatingLocation()
+        delegate?.waitForResponse()
+        networkManager.fetchTimes(lat: lastLocation.coordinate.latitude, lon: lastLocation.coordinate.longitude) { [weak self] result in
+            guard let self else { return }
             switch result {
             case .success(let prayerTimes):
-                print(prayerTimes)
+                DispatchQueue.main.async {
+                    self.delegate?.showPrayerTimes(prayerTimes: prayerTimes)
+                }
             case .failure(let failure):
                 print(failure)
             }
@@ -92,4 +100,5 @@ protocol PrayerTimesDelegate: AnyObject {
     func showPrayerTimes(prayerTimes: PrayerTimesModel)
     func locationRequestAccepted()
     func locationRequestDeclined()
+    func waitForResponse()
 }

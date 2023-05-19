@@ -13,10 +13,19 @@ final class PrayerTimesController: UIViewController {
     let vc1 = AlertController(alertTitle: "Konum bilgine ihtiyacımız var!", message: "Konum bilgini paylaşmak için hazır mısın? Yalnızca uygulamayı kullanırken konumunuzu kullanıyor olacağız.", buttonTitle: "Konum İzni İste")
     let vc2 = AlertController(alertTitle: "Konum bilgine ihtiyacımız var!", message: "Görünüşe göre konum bilgisine izin vermemişsiniz. Konuma izin vermek için Ayarlar -> Gizlilik & Güvenlik ve daha sonra uygulamamızı seçerek izin verebilirsin.", buttonTitle: "Konum İzni İste")
 
+    public var prayerTimesView: PrayerTimesView? {
+        guard isViewLoaded else { return nil }
+        return view as? PrayerTimesView
+    }
+    
+    override func loadView() {
+        view = PrayerTimesView()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        prayerTimesView?.delegate = self
         viewModel.delegate = self
     }
     
@@ -30,25 +39,25 @@ final class PrayerTimesController: UIViewController {
 }
 
 extension PrayerTimesController: PrayerTimesDelegate {
+    func waitForResponse() {
+        prayerTimesView?.showIndicator()
+    }
+    
     func locationRequestDeclined() {
-        print(#function)
         showUserHowToChangeLocationAuth()
     }
     
     func locationRequestAccepted() {
-        print(#function)
         removeChild(vc: vc1)
         removeChild(vc: vc2)
         tabBarController?.tabBar.isHidden = false
     }
     
     func showPrayerTimes(prayerTimes: PrayerTimesModel) {
-        print(#function)
-        print(prayerTimes)
+        prayerTimesView?.showPrayerTimes(presentation: prayerTimes.toPresentation(date: Date()))
     }
     
     func requestLocation() {
-        print(#function)
         removeChild(vc: vc2)
         addChild(vc: vc1)
         vc1.actionButton.addTarget(self, action: #selector(handleRequestLocationButton), for: .touchUpInside)
@@ -56,10 +65,15 @@ extension PrayerTimesController: PrayerTimesDelegate {
     }
         
     func showUserHowToChangeLocationAuth() {
-        print(#function)
         removeChild(vc: vc1)
         addChild(vc: vc2)
         vc2.actionButton.addTarget(self, action: #selector(handleOpenSettingsButton), for: .touchUpInside)
         self.tabBarController?.tabBar.isHidden = true
+    }
+}
+
+extension PrayerTimesController: PrayerTimesViewDelegate {
+    func advanceTime() {
+        viewModel.fetchTimes()
     }
 }
