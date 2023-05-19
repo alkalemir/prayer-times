@@ -13,12 +13,14 @@
 		2D8F391A2A17B6650000B90E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F39182A17B6650000B90E /* Main.storyboard */; };
 		2D8F391C2A17B6660000B90E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F391B2A17B6660000B90E /* Assets.xcassets */; };
 		2D8F391F2A17B6660000B90E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F391D2A17B6660000B90E /* LaunchScreen.storyboard */; };
-		2D8F392F2A17B73A0000B90E /* NetworkManager.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F392E2A17B73A0000B90E /* NetworkManager.docc */; };
 		2D8F39352A17B73A0000B90E /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8F392B2A17B73A0000B90E /* NetworkManager.framework */; };
 		2D8F393C2A17B73A0000B90E /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F393B2A17B73A0000B90E /* NetworkManagerTests.swift */; };
-		2D8F393D2A17B73A0000B90E /* NetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D8F392D2A17B73A0000B90E /* NetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D8F39402A17B73A0000B90E /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8F392B2A17B73A0000B90E /* NetworkManager.framework */; };
 		2D8F39412A17B73A0000B90E /* NetworkManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8F392B2A17B73A0000B90E /* NetworkManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D8F394A2A17B7920000B90E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39492A17B7920000B90E /* NetworkManager.swift */; };
+		2D8F394C2A17BD310000B90E /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F394B2A17BD310000B90E /* ResponseModel.swift */; };
+		2D8F394E2A17BD430000B90E /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F394D2A17BD430000B90E /* PlaceModel.swift */; };
+		2D8F39502A17BDAD0000B90E /* PrayerTimesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F394F2A17BDAD0000B90E /* PrayerTimesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,10 +71,12 @@
 		2D8F391E2A17B6660000B90E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D8F39202A17B6660000B90E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D8F392B2A17B73A0000B90E /* NetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D8F392D2A17B73A0000B90E /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
-		2D8F392E2A17B73A0000B90E /* NetworkManager.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkManager.docc; sourceTree = "<group>"; };
 		2D8F39342A17B73A0000B90E /* NetworkManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8F393B2A17B73A0000B90E /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		2D8F39492A17B7920000B90E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2D8F394B2A17BD310000B90E /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		2D8F394D2A17BD430000B90E /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		2D8F394F2A17BDAD0000B90E /* PrayerTimesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +143,10 @@
 		2D8F392C2A17B73A0000B90E /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				2D8F392D2A17B73A0000B90E /* NetworkManager.h */,
-				2D8F392E2A17B73A0000B90E /* NetworkManager.docc */,
+				2D8F39492A17B7920000B90E /* NetworkManager.swift */,
+				2D8F394B2A17BD310000B90E /* ResponseModel.swift */,
+				2D8F394F2A17BDAD0000B90E /* PrayerTimesModel.swift */,
+				2D8F394D2A17BD430000B90E /* PlaceModel.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -160,7 +166,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8F393D2A17B73A0000B90E /* NetworkManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +312,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8F392F2A17B73A0000B90E /* NetworkManager.docc in Sources */,
+				2D8F394C2A17BD310000B90E /* ResponseModel.swift in Sources */,
+				2D8F394E2A17BD430000B90E /* PlaceModel.swift in Sources */,
+				2D8F394A2A17B7920000B90E /* NetworkManager.swift in Sources */,
+				2D8F39502A17BDAD0000B90E /* PrayerTimesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +484,7 @@
 		2D8F39242A17B6660000B90E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +513,7 @@
 		2D8F39252A17B6660000B90E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

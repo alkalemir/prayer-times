@@ -6,12 +6,20 @@
 //
 
 import UIKit
+import NetworkManager
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        NetworkManager.shared.fetchTimes(lat: 13, lon: 12) { result in
+            switch result {
+            case .success(let success):
+                print(success)
+            case .failure(let failure):
+                print(failure)
+            }
+        }
     }
 
 
