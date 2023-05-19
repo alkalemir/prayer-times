@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D8F39132A17B6650000B90E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39122A17B6650000B90E /* AppDelegate.swift */; };
 		2D8F39152A17B6650000B90E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39142A17B6650000B90E /* SceneDelegate.swift */; };
-		2D8F39172A17B6650000B90E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39162A17B6650000B90E /* ViewController.swift */; };
+		2D8F39172A17B6650000B90E /* PrayerTimesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39162A17B6650000B90E /* PrayerTimesController.swift */; };
 		2D8F391C2A17B6660000B90E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F391B2A17B6660000B90E /* Assets.xcassets */; };
 		2D8F391F2A17B6660000B90E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F391D2A17B6660000B90E /* LaunchScreen.storyboard */; };
 		2D8F39352A17B73A0000B90E /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8F392B2A17B73A0000B90E /* NetworkManager.framework */; };
@@ -20,6 +20,15 @@
 		2D8F394C2A17BD310000B90E /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F394B2A17BD310000B90E /* ResponseModel.swift */; };
 		2D8F394E2A17BD430000B90E /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F394D2A17BD430000B90E /* PlaceModel.swift */; };
 		2D8F39502A17BDAD0000B90E /* PrayerTimesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F394F2A17BDAD0000B90E /* PrayerTimesModel.swift */; };
+		2D8F39562A17C3A60000B90E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39552A17C3A60000B90E /* TabBarController.swift */; };
+		2D8F39592A17C3EC0000B90E /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39582A17C3EC0000B90E /* UIColor+.swift */; };
+		2D8F39622A17C4060000B90E /* Cera Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F395C2A17C4060000B90E /* Cera Pro Light.otf */; };
+		2D8F39632A17C4060000B90E /* Cera Pro Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F395D2A17C4060000B90E /* Cera Pro Regular Italic.otf */; };
+		2D8F39642A17C4060000B90E /* Cera Pro Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F395E2A17C4060000B90E /* Cera Pro Black Italic.otf */; };
+		2D8F39652A17C4060000B90E /* Cera Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F395F2A17C4060000B90E /* Cera Pro Bold.otf */; };
+		2D8F39662A17C4060000B90E /* Cera Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F39602A17C4060000B90E /* Cera Pro Medium.otf */; };
+		2D8F39672A17C4060000B90E /* Cera Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D8F39612A17C4060000B90E /* Cera Pro Black.otf */; };
+		2D8F39692A17C41E0000B90E /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39682A17C41E0000B90E /* UIFont+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +73,7 @@
 		2D8F390F2A17B6650000B90E /* prayer-times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "prayer-times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8F39122A17B6650000B90E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8F39142A17B6650000B90E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D8F39162A17B6650000B90E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D8F39162A17B6650000B90E /* PrayerTimesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesController.swift; sourceTree = "<group>"; };
 		2D8F391B2A17B6660000B90E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D8F391E2A17B6660000B90E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D8F39202A17B6660000B90E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +84,15 @@
 		2D8F394B2A17BD310000B90E /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		2D8F394D2A17BD430000B90E /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		2D8F394F2A17BDAD0000B90E /* PrayerTimesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesModel.swift; sourceTree = "<group>"; };
+		2D8F39552A17C3A60000B90E /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		2D8F39582A17C3EC0000B90E /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		2D8F395C2A17C4060000B90E /* Cera Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Light.otf"; sourceTree = "<group>"; };
+		2D8F395D2A17C4060000B90E /* Cera Pro Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Regular Italic.otf"; sourceTree = "<group>"; };
+		2D8F395E2A17C4060000B90E /* Cera Pro Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Black Italic.otf"; sourceTree = "<group>"; };
+		2D8F395F2A17C4060000B90E /* Cera Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Bold.otf"; sourceTree = "<group>"; };
+		2D8F39602A17C4060000B90E /* Cera Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Medium.otf"; sourceTree = "<group>"; };
+		2D8F39612A17C4060000B90E /* Cera Pro Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cera Pro Black.otf"; sourceTree = "<group>"; };
+		2D8F39682A17C41E0000B90E /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +145,8 @@
 		2D8F39112A17B6650000B90E /* prayer-times */ = {
 			isa = PBXGroup;
 			children = (
+				2D8F395A2A17C3F80000B90E /* CeraFont */,
+				2D8F39572A17C3D70000B90E /* Extensions */,
 				2D8F39522A17C14A0000B90E /* Resources */,
 				2D8F39512A17C1430000B90E /* AppDelegate */,
 				2D8F39532A17C1760000B90E /* Scenes */,
@@ -175,9 +195,48 @@
 		2D8F39532A17C1760000B90E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				2D8F39162A17B6650000B90E /* ViewController.swift */,
+				2D8F39542A17C3990000B90E /* TabBar */,
+				2D8F39162A17B6650000B90E /* PrayerTimesController.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2D8F39542A17C3990000B90E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F39552A17C3A60000B90E /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2D8F39572A17C3D70000B90E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F39582A17C3EC0000B90E /* UIColor+.swift */,
+				2D8F39682A17C41E0000B90E /* UIFont+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D8F395A2A17C3F80000B90E /* CeraFont */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F395B2A17C4060000B90E /* cera pro sv */,
+			);
+			path = CeraFont;
+			sourceTree = "<group>";
+		};
+		2D8F395B2A17C4060000B90E /* cera pro sv */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F395C2A17C4060000B90E /* Cera Pro Light.otf */,
+				2D8F395D2A17C4060000B90E /* Cera Pro Regular Italic.otf */,
+				2D8F395E2A17C4060000B90E /* Cera Pro Black Italic.otf */,
+				2D8F395F2A17C4060000B90E /* Cera Pro Bold.otf */,
+				2D8F39602A17C4060000B90E /* Cera Pro Medium.otf */,
+				2D8F39612A17C4060000B90E /* Cera Pro Black.otf */,
+			);
+			path = "cera pro sv";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +355,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8F39662A17C4060000B90E /* Cera Pro Medium.otf in Resources */,
 				2D8F391F2A17B6660000B90E /* LaunchScreen.storyboard in Resources */,
+				2D8F39672A17C4060000B90E /* Cera Pro Black.otf in Resources */,
+				2D8F39652A17C4060000B90E /* Cera Pro Bold.otf in Resources */,
+				2D8F39642A17C4060000B90E /* Cera Pro Black Italic.otf in Resources */,
+				2D8F39622A17C4060000B90E /* Cera Pro Light.otf in Resources */,
+				2D8F39632A17C4060000B90E /* Cera Pro Regular Italic.otf in Resources */,
 				2D8F391C2A17B6660000B90E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,9 +387,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8F39172A17B6650000B90E /* ViewController.swift in Sources */,
+				2D8F39172A17B6650000B90E /* PrayerTimesController.swift in Sources */,
+				2D8F39562A17C3A60000B90E /* TabBarController.swift in Sources */,
 				2D8F39132A17B6650000B90E /* AppDelegate.swift in Sources */,
 				2D8F39152A17B6650000B90E /* SceneDelegate.swift in Sources */,
+				2D8F39692A17C41E0000B90E /* UIFont+.swift in Sources */,
+				2D8F39592A17C3EC0000B90E /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 import UIKit
 import NetworkManager
 
-class ViewController: UIViewController {
+class PrayerTimesController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

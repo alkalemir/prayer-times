@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Cera Pro Black Italic.otf</string>
+		<string>Cera Pro Black.otf</string>
+		<string>Cera Pro Bold.otf</string>
+		<string>Cera Pro Light.otf</string>
+		<string>Cera Pro Medium.otf</string>
+		<string>Cera Pro Regular Italic.otf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
