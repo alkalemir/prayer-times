@@ -54,7 +54,7 @@ extension PrayerTimesController: PrayerTimesDelegate {
     }
     
     func showPrayerTimes(prayerTimes: PrayerTimesModel) {
-        prayerTimesView?.showPrayerTimes(presentation: prayerTimes.toPresentation(date: Date().addingTimeInterval(-3000)))
+        prayerTimesView?.showPrayerTimes(presentation: prayerTimes.toPresentation(date: Date()))
     }
     
     func requestLocation() {
