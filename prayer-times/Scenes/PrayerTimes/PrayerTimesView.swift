@@ -143,6 +143,26 @@ final class PrayerTimesView: UIView {
                 self.timer?.invalidate()
                 self.delegate?.advanceTime()
             }
+            let currentTimeName: String
+            
+            switch model.currentTime {
+            case 0:
+                currentTimeName = "Güneş"
+            case 1:
+                currentTimeName = "Öğle"
+            case 2:
+                currentTimeName = "İkindi"
+            case 3:
+                currentTimeName = "Akşam"
+            case 4:
+                currentTimeName = "Yatsı"
+            case 5:
+                currentTimeName = "İmsak"
+            default:
+                currentTimeName = "bilinmiyor"
+            }
+            UserDefaults.standard.set(currentTimeName, forKey: "timeName")
+            UserDefaults.standard.set(self.remainingTime, forKey: "remainTime")
         }
     }
     

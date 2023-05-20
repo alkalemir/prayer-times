@@ -24,6 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This occurs shortly after the scene enters the background, or when its session is discarded.
         // Release any resources associated with this scene that can be re-created the next time the scene connects.
         // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
+        showAlert()
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
@@ -37,8 +38,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
-        // Called as the scene transitions from the background to the foreground.
-        // Use this method to undo the changes made on entering the background.
         if isDidEnterBackground {
             let mainTabBar = window!.rootViewController as! TabBarController
             let prayerTimesVC = mainTabBar.viewControllers![0] as! PrayerTimesController
@@ -47,10 +46,38 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
+        showAlert()
         isDidEnterBackground = true
         let mainTabBar = window!.rootViewController as! TabBarController
         let prayerTimesVC = mainTabBar.viewControllers![0] as! PrayerTimesController
         prayerTimesVC.prayerTimesView?.timer?.invalidate()
+    }
+    
+    private func showAlert() {
+        if let timeName = UserDefaults.standard.string(forKey: "timeName") {
+            let remainTime = UserDefaults.standard.integer(forKey: "remainTime")
+            let content = UNMutableNotificationContent()
+            let notificationOffset = UserDefaults.standard.integer(forKey: "timeInterval")
+            let minute: Int
+            if notificationOffset == 900 {
+                minute = 15
+            } else if notificationOffset == 1800 {
+                minute = 30
+            } else if notificationOffset == 45 * 60 {
+                minute = 45
+            } else {
+                minute = 0
+            }
+            content.title = "\(timeName) namazı yaklaşıyor!"
+            content.body = "\(minute) dakika sonra \(timeName) ezanı okunacak."
+            content.sound = .default
+            print(notificationOffset)
+            if remainTime >= notificationOffset {
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(remainTime - notificationOffset), repeats: false)
+                let request = UNNotificationRequest(identifier: "MyNotification", content: content, trigger: trigger)
+                UNUserNotificationCenter.current().add(request)
+            }
+        }
     }
 }
 

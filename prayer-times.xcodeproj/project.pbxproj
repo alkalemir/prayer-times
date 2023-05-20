@@ -46,6 +46,9 @@
 		2D8F398E2A180ED90000B90E /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F398D2A180ED90000B90E /* UIApplication+.swift */; };
 		2D8F39912A1826450000B90E /* QiblaFinderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39902A1826450000B90E /* QiblaFinderController.swift */; };
 		2D8F39942A18267D0000B90E /* CompassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39932A18267D0000B90E /* CompassManager.swift */; };
+		2D8F39992A18C2530000B90E /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F39982A18C2530000B90E /* ActivityViewController.swift */; };
+		2D8F399B2A18C25D0000B90E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F399A2A18C25D0000B90E /* SettingsVC.swift */; };
+		2D8F399D2A18C3D70000B90E /* SettingsListSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F399C2A18C3D70000B90E /* SettingsListSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +128,9 @@
 		2D8F398D2A180ED90000B90E /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		2D8F39902A1826450000B90E /* QiblaFinderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiblaFinderController.swift; sourceTree = "<group>"; };
 		2D8F39932A18267D0000B90E /* CompassManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassManager.swift; sourceTree = "<group>"; };
+		2D8F39982A18C2530000B90E /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		2D8F399A2A18C25D0000B90E /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		2D8F399C2A18C3D70000B90E /* SettingsListSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsListSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +241,7 @@
 				2D8F39542A17C3990000B90E /* TabBar */,
 				2D8F396A2A17C49B0000B90E /* PrayerTimes */,
 				2D8F398F2A1826050000B90E /* QiblaFinder */,
+				2D8F39952A18C2020000B90E /* Settings */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -318,6 +325,16 @@
 				2D8F39932A18267D0000B90E /* CompassManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		2D8F39952A18C2020000B90E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F399C2A18C3D70000B90E /* SettingsListSwiftUI.swift */,
+				2D8F399A2A18C25D0000B90E /* SettingsVC.swift */,
+				2D8F39982A18C2530000B90E /* ActivityViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +501,7 @@
 				2D8F39842A17D95B0000B90E /* LottieAnimationView+.swift in Sources */,
 				2D8F39562A17C3A60000B90E /* TabBarController.swift in Sources */,
 				2D8F39882A17F1BD0000B90E /* PrayerTimesPresentation.swift in Sources */,
+				2D8F399D2A18C3D70000B90E /* SettingsListSwiftUI.swift in Sources */,
 				2D8F39132A17B6650000B90E /* AppDelegate.swift in Sources */,
 				2D8F39152A17B6650000B90E /* SceneDelegate.swift in Sources */,
 				2D8F39702A17CA610000B90E /* UIViewController+.swift in Sources */,
@@ -496,7 +514,9 @@
 				2D8F398E2A180ED90000B90E /* UIApplication+.swift in Sources */,
 				2D8F39692A17C41E0000B90E /* UIFont+.swift in Sources */,
 				2D8F398C2A180DA20000B90E /* UIStackView+.swift in Sources */,
+				2D8F399B2A18C25D0000B90E /* SettingsVC.swift in Sources */,
 				2D8F39592A17C3EC0000B90E /* UIColor+.swift in Sources */,
+				2D8F39992A18C2530000B90E /* ActivityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +696,7 @@
 				DEVELOPMENT_TEAM = HG8VJQPKXZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "prayer-times/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Namaz Vakitleri";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -704,6 +725,7 @@
 				DEVELOPMENT_TEAM = HG8VJQPKXZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "prayer-times/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Namaz Vakitleri";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
